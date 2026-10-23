@@ -1,0 +1,31 @@
+{
+  "origin_repo": "https://github.com/seris10/yellowstone",
+  "source_commit": "cbae17b016a79b0271588538bf2751b98b97b4e8",
+  "source_state": "dirty working tree; file hashes identify exact extracted sources",
+  "files": [
+    {
+      "source_path": "hydrology/hydrosim.py",
+      "target_path": "src/hydrosim/core.py",
+      "sha256": "2fe6f6074e3d0709122c8cd2eca95e013c3f409b0041599f583a312e43de2f6f",
+      "matches_HEAD": true,
+      "adaptation": "none; exact bytes"
+    },
+    {
+      "source_path": "hydrology/validate_hydrosim.py",
+      "target_path": "validation/validate_hydrosim.py",
+      "sha256": "354ef65c2ee0ed63fcd031d3a62ecbdf6618d4831430b540f20a3263cc819064",
+      "matches_HEAD": true,
+      "adaptation": "none; exact bytes"
+    },
+    {
+      "source_path": "hydrology/demo_hydrosim.py",
+      "target_path": "examples/upstream_demo.py",
+      "sha256": "daa91c657881ead4e1502fe480ff5bea819d49a38b1df74c18cad5685ff06edc",
+      "matches_HEAD": true,
+      "adaptation": "none; exact bytes"
+    }
+  ],
+  "update_policy": "Frozen extract; changes require explicit reviewed upstream synchronization",
+  "license": "Apache-2.0",
+  "author": "KJR"
+}

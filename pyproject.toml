@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "hydrosim"
+version = "0.1.0"
+description = "Grid rainfall, infiltration, runoff and water budgets"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name="KJR"}]
+dependencies = ["numpy>=1.26,<3"]
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1"]
+plots = ["matplotlib>=3.8"]
+[project.scripts]
+hydrosim = "hydrosim.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.data-files]
+"share/hydrosim" = ["UPSTREAM.json", "ORIGIN.md", "README.md"]
